@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            width: 440px;
+        }
+        .header-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: #7d2c48;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 14px;
+        }
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 0.8rem;
+            color: #6c757d;
+            font-weight: 600;
+        }
+        .row {
+            display: flex;
+            gap: 12px;
+        }
+        .col {
+            flex: 1;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px 12px;
+            box-sizing: border-box;
+            border: 1px solid #e1e8ed;
+            background-color: #f7f9fa;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            color: #333;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        input:focus, select:focus {
+            border-color: #7d2c48;
+        }
+        input[readonly] {
+            background-color: #eef2f5;
+            color: #555;
+        }
+        .radio-section {
+            margin: 15px 0;
+        }
+        .radio-section label.main-label {
+            margin-bottom: 6px;
+        }
+        .radio-options {
+            display: flex;
+            gap: 25px;
+        }
+        .radio-options label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #333;
+            font-size: 0.9rem;
+            cursor: pointer;
+            font-weight: normal;
+        }
+        .radio-options input[type="radio"] {
+            accent-color: #7d2c48;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #7d2c48;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #622238;
+        }
+    

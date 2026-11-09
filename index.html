@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de bono navideño</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="card">
+        <div class="header-title">
+            <span>🎄</span> Cálculo de bono navideño
+        </div>
+
+        <form id="bonoForm">
+            <!-- Fecha de elaboración -->
+            <div class="form-group">
+                <label>Fecha de elaboración</label>
+                <input type="date" id="txtFecha" required>
+            </div>
+
+            <!-- Nombre y Apellido en dos columnas -->
+            <div class="row form-group">
+                <div class="col">
+                    <label>Nombre</label>
+                    <input type="text" id="txtNombre" required>
+                </div>
+                <div class="col">
+                    <label>Apellido</label>
+                    <input type="text" id="txtApellido" required>
+                </div>
+            </div>
+
+            <!-- Área de trabajo -->
+            <div class="form-group">
+                <label>Área de Trabajo</label>
+                <select id="selArea">
+                    <option value="Finanzas">Finanzas</option>
+                    <option value="Ventas">Ventas</option>
+                    <option value="Administracion">Administración</option>
+                </select>
+            </div>
+
+            <!-- Ingresa email -->
+            <div class="form-group">
+                <label>Ingresa email</label>
+                <input type="email" id="txtEmail" required>
+            </div>
+
+            <!-- Horas Trabajadas y Pago por Hora en dos columnas -->
+            <div class="row form-group">
+                <div class="col">
+                    <label>Horas Trabajadas</label>
+                    <input type="number" id="txtHoras" min="0" step="any" required>
+                </div>
+                <div class="col">
+                    <label>Pago por Hora</label>
+                    <input type="number" id="txtPagoHora" min="0" step="any" required>
+                </div>
+            </div>
+
+            <!-- Sueldo Bruto y Bono en dos columnas -->
+            <div class="row form-group">
+                <div class="col">
+                    <label>Sueldo Bruto</label>
+                    <input type="text" id="txtSueldoBruto" readonly placeholder="$0.00">
+                </div>
+                <div class="col">
+                    <label>Bono</label>
+                    <input type="text" id="txtBono" readonly placeholder="$0.00">
+                </div>
+            </div>
+
+            <!-- Sueldo Total -->
+            <div class="form-group">
+                <label>Sueldo Total</label>
+                <input type="text" id="txtSueldoTotal" readonly placeholder="$0.00">
+            </div>
+
+            <!-- ¿Tiene Hijos? -->
+            <div class="radio-section">
+                <label class="main-label">Tiene Hijos?</label>
+                <div class="radio-options">
+                    <label><input type="radio" name="hijos" value="si"> Si</label>
+                    <label><input type="radio" name="hijos" value="no" checked> No</label>
+                </div>
+            </div>
+
+            <button type="submit">Calcular Bono</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
